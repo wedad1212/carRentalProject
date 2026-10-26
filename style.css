@@ -1,0 +1,236 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #263b3d;
+    direction: rtl;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #173b3f;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    font-size: 17px;
+}
+
+
+
+nav {
+    background-color: #dcebe7;
+    width: 90%;
+    margin: 25px auto 50px;
+    padding: 20px;
+    border-radius: 12px;
+
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+}
+
+
+nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li::marker {
+    content: "";
+}
+
+nav a {
+    display: inline-block !important;
+    color: #173b3f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #16836b;
+    color: white;
+}
+
+
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+
+h2 {
+    color: #173b3f;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #16836b;
+}
+
+
+p {
+    font-size: 16px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #173b3f;
+    color: white;
+    padding: 14px 10px;
+}
+
+td {
+    padding: 12px 10px;
+    text-align: center;
+    border: 1px solid #dce5e2;
+}
+
+tr:nth-child(even) {
+    background-color: #edf4f1;
+}
+
+
+tr.details {
+    display: none;
+}
+
+tr.details td {
+    text-align: right;
+    padding: 15px;
+    background-color: #dcebe7;
+    color: #173b3f;
+    line-height: 1.8;
+}
+
+
+
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: #16836b;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #105c4c;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 11px;
+    margin: 6px 0 12px;
+    border: 1px solid #cbd8d4;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* نموذج الحجز */
+#bookingForm {
+    display: none;
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.err {
+    color: #c62828;
+    font-size: 14px;
+    display: block;
+}
+
+.invalid {
+    border: 2px solid #c62828 !important;
+    background-color: #fff5f5 !important;
+}
+
+.compatibility {
+    display: none;
+}
+
+footer {
+    background-color: #173b3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
