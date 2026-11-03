@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     $(".showDetails").click(function () {
@@ -40,14 +38,17 @@ function clearErrors() {
 
 
 function checkName(name) {
-   if(name==""){
-    return true
-   }
+    // الاسم اختياري    
+    if (name == "") {
+        return true;
+    }
+    // أحرف عربية 
+    return /^[\u0621-\u064A ]+$/.test(name);
 }
 
 
 function checkNationalId(id) {
-    // {11} => 11 رقم فقط
+    //  11 رقم فقط
     if (!/^[0-9]{11}$/.test(id)) {
         return false;
     }
@@ -88,6 +89,10 @@ function sendForm() {
     var ok = true;      
 
  
+    if (!checkName(name.trim())) {
+        setError("fullName", "الاسم يجب أن يحتوي على أحرف عربية فقط");
+        ok = false;
+    }
     if (!checkNationalId(id)) {
         setError("nationalId", "الرقم الوطني إلزامي: 11 رقماً وأول رقمين من 01 إلى 14");
         ok = false;
