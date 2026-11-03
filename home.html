@@ -1,72 +1,79 @@
-<!DOCTYPE html>
-<html xmlns dir="rtl" lang="ar" xml:lang="ar">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
 <head>
-    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الصفحة الرئيسية لتأجير السيارات</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الصفحة الرئيسية - تأجير السيارات</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <header>
+    <div id="header">
         <h1>موقع تأجير السيارات</h1>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="Cars.html">Cars </a></li>
-              
-              
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-          
+        <ul id="menu">
+            <li><a href="home.html" class="active">الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+            <li><a href="Cars.html">السيارات</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="box">
             <h2>فريق المشروع</h2>
-            <table>
-                <thead>
+            <div class="tableWrap">
+                <table>
                     <tr>
-                        <th>اسم باللغةالعربية</th>
-                        <th>الاسم باللغة الانلكيزية</th>
+                        <th>الاسم بالعربية</th>
+                        <th>الاسم بالإنكليزية</th>
                         <th>الرقم الجامعي</th>
                         <th>الصف</th>
                     </tr>
-                </thead>
-                <tbody>
                     <tr>
-                        <td>غنى زغبوبة </td>
+                        <td>غنى زغبوبة</td>
                         <td>Ghina Zaghboub</td>
                         <td>ghina_331400</td>
                         <td>C3</td>
                     </tr>
-                        <tr>
-                        <td> ربا بهوي</td>
+                    <tr>
+                        <td>ربا بهوي</td>
                         <td>Ruba Bahwi</td>
                         <td>rouba_224360</td>
                         <td>C2</td>
-                    
                     </tr>
-                           <tr>
-                        <td> رائد القباني</td>
+                    <tr>
+                        <td>رائد القباني</td>
                         <td>Raed Al-Qabbani</td>
                         <td>raed_266478</td>
                         <td>C1</td>
-                     
+                        
                     </tr>
-                </tbody>
-            </table>
-            <h2>اشراف الدكتور غيث مصطفى </h2>
-        </section>
+                    <tr>
+                        <td>عمر عساف </td>
+                        <td>Omar Assaf </td>
+                        <td>omar_113839</td>
+                        <td>C1</td>
+                    </tr>
+                    <tr>
+                        <td> زكريا الشايب </td>
+                        <td>Zakaria Al-Shaib </td>
+                        <td>zakaria_440812</td>
+                        <td>C2</td>
+                    </tr>
+                 
+                </table>
+            </div>
+        </br>
+            <p>إشراف الدكتور غيث مصطفى</p>
+        </div>
 
-        <section>
+        <div class="box">
             <h2>معلومات النشر</h2>
             <p>المشروع منشور ومتاح عبر الرابط التالي: <a href="https://carrentalproject-sigma.vercel.app/">رابط المشروع</a></p>
-        </section>
-       
-    </main>
-    <footer>
-        <p> الشركة الأقوى لتأجير السيارات 2026</p>
-    </footer>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>الشركة الأقوى لتأجير السيارات 2026</p>
+    </div>
 </body>
 </html>
